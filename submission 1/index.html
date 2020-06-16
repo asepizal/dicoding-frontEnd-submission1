@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+  <div id="mode">
+    <p>Dark Mode</p>
+    <div onclick="setDarkMode(true)" id="darkBtn" class="">  <span class="dark"></span></div>
+    <div onclick="setDarkMode(false)" id="lightBtn" class="hidden"> <span class="light"></span> </div>
+  </div>
+  <h1 id="judul">WEBSITE</h1>
+  <!-- Navigation -->
+  <nav class="nav">
+    <ul id="ul">
+      <li><a href="#">Trending Topic</a></li>
+      <li><a href="#">Category</a></li>
+      <li><a href="#">About Me</a></li>
+    </ul>
+  </nav>
+  <!-- End Navigation -->
+</header>
+
+ 
+<!-- main -->
+<main class="main">
+  <div id="container">
+    <h1 id="trending">Trending</h1>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="assets/img/bat.jpg" style="width:100%">
+        <div class="text">Peneliti menduga bahwa virus corona berasal dari kelelawar</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="assets/img/corona.jpg" style="width:100%">
+        <div class="text">Corona mulai menyerang indonesia</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="assets/img/makkah.jpg" style="width:100%">
+        <div class="text">Pemerintah arab saudi berencana menutup masjidil haram</div>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- The dots/circles -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <h1 id="category">Category</h1>
+    <article class="article" style="background-image: url('assets/img/youth.jpg');">
+      <h2>Sport</h2>
+    </article>
+    <article class="article" style="background-image: url('assets/img/sejarah.jpg');">
+      <h2>Sejarah</h2>
+    </article>
+    <article class="article" style="background-image: url('assets/img/otomotif.jpg');">
+      <h2>Otomotif</h2>
+    </article>
+    <article class="article" style="background-image: url('assets/img/teknologi.jpg');">
+      <h2>Teknologi</h2>
+    </article>
+    <article class="article" style="background-image: url('assets/img/art.jpg');">
+      <h2>Art</h2>
+    </article>
+  </div>
+  <aside id="aside">
+    <h1>About Me</h1>
+    <img src="assets/img/foto.jpg" alt="">
+    <h3>Asep Rizal</h3>
+    <table>
+      <tr>
+        <td class="bold">Agama</td>
+        <td>:</td>
+        <td>Islam</td>
+      </tr>
+      <tr>
+        <td class="bold">Umur</td>
+        <td>:</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td class="bold">Alamat</td>
+        <td>:</td>
+        <td>Jl. Jamika gg.kh.ishak wijaya</td>
+      </tr>
+    </table>
+  </aside>
+
+</main>
+<!-- end main -->
+
+<!-- footer -->
+<footer>
+  <p>&copy; copyright 2020</p>
+</footer>
+<!-- end footer -->
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
